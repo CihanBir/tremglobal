@@ -1,8 +1,9 @@
 <template>
     <div class="header-navbar">
         <div class="navbar-top">
-            <TheHeaderCurrency />
             <TheHeaderLang />
+            <TheHeaderCurrency />
+            <TheHeaderSocial />
         </div>
         <div class="navbar-menu">
             <nav class="nav-menu">
@@ -74,13 +75,15 @@
 <script>
 import TheHeaderCurrency from '~/components/Header/TheHeaderCurrency.vue'
 import TheHeaderLang from '~/components/Header/TheHeaderLang.vue'
+import TheHeaderSocial from '~/components/Header/TheHeaderSocial.vue'
 
 export default {
     name: 'TheHeaderNavBar',
 
     components: {
         TheHeaderCurrency,
-        TheHeaderLang
+        TheHeaderLang,
+        TheHeaderSocial
     }
 }
 </script>

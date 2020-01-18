@@ -32,7 +32,7 @@ export default {
       project: ''
     }
   },
-
+  
   apollo: {
     // Query with parameters
     project: {

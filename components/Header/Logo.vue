@@ -1,5 +1,7 @@
 <template>
-  <img src="~/static/trem-global-logo.png" alt="Trem Global Logo" class="img-fluid">
+  <div class="logo">
+    <img src="~/static/trem-global-logo.png" alt="Trem Global Logo" class="img-fluid">
+  </div>
 </template>
 <script>
 export default {

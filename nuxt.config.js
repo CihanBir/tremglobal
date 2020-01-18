@@ -29,7 +29,10 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-burger-menu.js', ssr: false }
+    { src: '~/plugins/vue-burger-menu.js', ssr: false },
+    '~plugins/vue-cookie.js',
+    '~plugins/filters.js',
+    '~plugins/fontawesome.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -81,7 +84,7 @@ export default {
   ],
 
   apollo: {
-    tokenName: 'yourApolloTokenName', // optional, default: apollo-token
+    tokenName: 'tgLaravelAPI', // optional, default: apollo-token
     cookieAttributes: {
       /**
         * Define when the cookie will be removed. Value can be a Number
@@ -112,10 +115,10 @@ export default {
     clientConfigs: {
       default: {
         // required  
-        httpEndpoint: 'http://127.0.0.1:8000',
+        httpEndpoint: 'http://localhost:8000',
         // optional
         // override HTTP endpoint in browser only
-        browserHttpEndpoint: 'http://127.0.0.1:8000/graphql',
+        browserHttpEndpoint: 'http://localhost:8000/graphql',
         // optional
         // See https://www.apollographql.com/docs/link/links/http.html#options
         httpLinkOptions: {
@@ -133,11 +136,9 @@ export default {
         // websocketsOnly: false // Optional
       },
       test: {
-        httpEndpoint: 'http://localhost:8000',
+        httpEndpoint: 'https://tremglobal.now.sh/',
         tokenName: 'apollo-token'
       },
-      // alternative: user path to config which returns exact same config options
-      // test2: '~/plugins/my-alternative-apollo-config.js'
     }
   },
 
