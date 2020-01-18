@@ -5,6 +5,18 @@ ul {
 a {
     text-decoration: none;
 }
+
+.dropdown-menu {
+    background: #252525;
+}
+.dropdown-item {
+    color: #fff;
+}
+.dropdown-item:focus, 
+.dropdown-item:hover {
+
+}
+
 .header {
     padding: 20px;
     background-color: rgba(41,41,41,.95);
@@ -66,22 +78,31 @@ a {
 .nav-menu ul.menu li {
     list-style:none;
     padding:7px 10px;
-    -webkit-transition:var(--default-transition,all .3s ease-in-out);
-    transition:var(--default-transition,all .3s ease-in-out);
+    -webkit-transition:var(--default-transition,all .2s ease-in-out);
+    transition:var(--default-transition,all .2s ease-in-out);
     background:transparent
 }
 .nav-menu ul.menu li a {
     display:block;
     color:#c3c3c3;
-    -webkit-transition:var(--default-transition,all .3s ease-in-out);
-    transition:var(--default-transition,all .3s ease-in-out)
+    -webkit-transition:var(--default-transition,all .2s ease-in-out);
+    transition:var(--default-transition,all .2s ease-in-out)
 }
-.nav-menu ul.menu li:hover {
+.nav-menu ul.menu > li:hover {
     background-color:#111
 }
-.nav-menu ul li:hover a {
+.nav-menu ul.menu > li:hover a {
     color:#fff;
     text-decoration: none;
+}
+.nav-menu .menu .dropdown-menu li:hover {
+    background: #FFF;
+}
+.nav-menu .menu .dropdown-menu li:hover a {
+    color: #252525;
+}
+.nav-menu ul.menu .dropdown-menu li {
+    padding: 0;
 }
 .nav-menu .btn-secondary,
 .nav-menu .btn-secondary:hover {
