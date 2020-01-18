@@ -1,0 +1,69 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding: 20px;
+    background-color: rgba(41,41,41,.95);
+}
+.header-navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.nav-menu ul.menu {
+    margin:0;
+    padding:0;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
+    justify-content:flex-end;
+    -webkit-box-align:end;
+    -ms-flex-align:end;
+    align-items:flex-end
+}
+.nav-menu ul.menu li {
+    list-style:none;
+    padding:7px 10px;
+    -webkit-transition:var(--default-transition,all .3s ease-in-out);
+    transition:var(--default-transition,all .3s ease-in-out);
+    background:transparent
+}
+.nav-menu ul.menu li a {
+    display:block;
+    color:#c3c3c3;
+    -webkit-transition:var(--default-transition,all .3s ease-in-out);
+    transition:var(--default-transition,all .3s ease-in-out)
+}
+.nav-menu ul.menu li:hover {
+    background-color:#111
+}
+.nav-menu ul li:hover a {
+    color:#fff;
+    text-decoration: none;
+}
+.nav-menu .btn-secondary,
+.nav-menu .btn-secondary:hover {
+    color: #c3c3c3 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    padding: 0 !important;
+}
+.nav-menu .btn-secondary:hover {
+    color: #fff !important;
+}
+.nav-menu .btn-secondary:focus,
+.nav-menu .btn-secondary:hover {
+    outline: 0;
+    box-shadow: none;
+}
